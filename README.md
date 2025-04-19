@@ -2,6 +2,8 @@
 
 JavaScript/TypeScript execution utilities for text formatting.
 
+[![ESLint](https://img.shields.io/badge/-ESLint-4B32C3?style=flat&logo=eslint&logoColor=white)](config/eslint/README.md)
+
 ## Installation
 
 ```bash
