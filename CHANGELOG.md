@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/sds9/console-tools-js/compare/v1.3.0...v1.4.0) (2025-04-19)
+
+
+### Features
+
+* update the package.json. This repo has moved from its original spot ([#12](https://github.com/sds9/console-tools-js/issues/12)) ([8301f2a](https://github.com/sds9/console-tools-js/commit/8301f2a7047d083a908dbe84382a5591be6f593c))
+
 ## [1.3.0](https://github.com/sds9-org/js-exec/compare/v1.2.0...v1.3.0) (2025-04-19)
 
 
