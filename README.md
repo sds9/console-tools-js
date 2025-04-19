@@ -83,3 +83,25 @@ enum BackgroundColor {
   RED = '41'
 }
 ```
+
+## Jupyter Notebook
+
+To demonstrate the usage of the `formatText` function with various styles, you can use the provided Jupyter notebook.
+
+### Installation
+
+First, install Jupyter as a development dependency:
+
+```bash
+npm install --save-dev jupyter
+```
+
+### Starting the Jupyter Notebook Server
+
+To start the Jupyter notebook server, run the following command:
+
+```bash
+npm run start:jupyter
+```
+
+This will open the Jupyter notebook interface in your default web browser. From there, you can navigate to the `notebooks` directory and open the `console-tools-js-demo.ipynb` notebook to see examples of how to use the `formatText` function.

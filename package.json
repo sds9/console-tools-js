@@ -14,7 +14,8 @@
     "prepare": "npm run clean && npm run build",
     "test": "vitest run --config ./config/vitest/vitest.config.ts",
     "test:watch": "vitest --config ./config/vitest/vitest.config.ts",
-    "lint": "npx --node-options='--experimental-strip-types --no-warnings' eslint --flag unstable_native_nodejs_ts_config --config ./config/eslint/eslint.config.ts"
+    "lint": "npx --node-options='--experimental-strip-types --no-warnings' eslint --flag unstable_native_nodejs_ts_config --config ./config/eslint/eslint.config.ts",
+    "start:jupyter": "jupyter notebook"
   },
   "repository": {
     "type": "git",
@@ -41,7 +42,8 @@
     "jiti": "^2.4.2",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.30.1",
-    "vitest": "^3.1.1"
+    "vitest": "^3.1.1",
+    "jupyter": "^1.0.0"
   },
   "engines": {
     "node": ">=14.0.0"
