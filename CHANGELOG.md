@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.0](https://github.com/sds9-org/js-exec/compare/v1.1.0...v1.2.0) (2025-04-19)
+
+
+### Features
+
+* add tests for standard and bright font/background colors ([d86f23d](https://github.com/sds9-org/js-exec/commit/d86f23d77334b4b76ea77babd3f695e9a869ed3d))
+* enhance text formatting utilities with additional styles and colors ([11373bc](https://github.com/sds9-org/js-exec/commit/11373bcc2f588ef00dc633e36b020df9c63f16cb))
+* enhance text formatting utilities with additional styles and colors ([7a7d6ec](https://github.com/sds9-org/js-exec/commit/7a7d6ecd39b1b87df4657dc395e4f8bc89dc3cfb))
+
 ## [1.1.0](https://github.com/sds9-org/js-exec/compare/v1.0.0...v1.1.0) (2025-04-19)
 
 
