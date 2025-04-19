@@ -1,7 +1,7 @@
 {
-  "name": "js-exec",
+  "name": "console-tools-js",
   "version": "0.1.0",
-  "description": "JavaScript/TypeScript execution utilities",
+  "description": "JavaScript/TypeScript console tools",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
