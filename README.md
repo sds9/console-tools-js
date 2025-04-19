@@ -1,58 +1,81 @@
-# js-exec
+# console-tools-js
 
-JavaScript/TypeScript execution utilities.
+JavaScript/TypeScript execution utilities for text formatting.
 
 ## Installation
 
 ```bash
-npm install js-exec
+npm install console-tools-js
 ```
 
 ## Usage
 
 ```typescript
-import { greet } from 'js-exec';
+import { formatText, FontColor, BackgroundColor } from 'console-tools-js';
 
-// Use the library
-const greeting = greet('World');
-console.log(greeting); // Output: Hello, World!
+// Format text with various styles
+const boldRedText = formatText('Important message', { 
+  bold: true, 
+  fontColor: FontColor.RED 
+});
+
+// Format text with background color
+const highlightedText = formatText('Warning', {
+  backgroundColor: BackgroundColor.RED,
+  fontColor: FontColor.BLACK
+});
+
+// Combine multiple styles
+const emphasisText = formatText('Critical alert', {
+  bold: true,
+  italic: true,
+  underline: true,
+  fontColor: FontColor.RED
+});
+
+console.log(boldRedText);
+console.log(highlightedText);
+console.log(emphasisText);
 ```
 
 ## API Documentation
 
-### `greet(name: string): string`
+### `formatText(text: string, style: FontStyle): string`
 
-A simple hello world function.
+Formats text with ANSI escape sequences for terminal styling.
 
 - **Parameters**:
-  - `name` - The name to greet
-- **Returns**: A greeting message
+  - `text` - The text to format
+  - `style` - An object containing formatting options
+- **Returns**: The formatted text string with ANSI escape codes
 
-## Development
+### `FontStyle` type
 
-### Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/sds9-org/js-exec.git
-cd js-exec
-
-# Install dependencies
-npm install
+```typescript
+type FontStyle = {
+  bold?: boolean
+  italic?: boolean
+  underline?: boolean
+  fontColor?: FontColor
+  backgroundColor?: BackgroundColor
+  strikethrough?: boolean
+}
 ```
 
-### Build
+### `FontColor` enum
 
-```bash
-npm run build
+```typescript
+enum FontColor {
+  BLACK = '30',
+  RED = '31'
+}
 ```
 
-### Test
+### `BackgroundColor` enum
 
-```bash
-npm test
+```typescript
+enum BackgroundColor {
+  BLACK = '40',
+  RED = '41'
+}
 ```
-
-## License
-
-ISC
