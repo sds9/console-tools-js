@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/sds9-org/js-exec/compare/v1.2.0...v1.3.0) (2025-04-19)
+
+
+### Features
+
+* migrate ESLint configuration to new flat config format and update dependencies ([01d4bc8](https://github.com/sds9-org/js-exec/commit/01d4bc88d9663cb0ca2feed9058099198673f478))
+
+
+### Bug Fixes
+
+* update ESLint badge in README for improved visibility ([08dc505](https://github.com/sds9-org/js-exec/commit/08dc50528f25111879e0b09face2f79b0e296f67))
+
 ## [1.2.0](https://github.com/sds9-org/js-exec/compare/v1.1.0...v1.2.0) (2025-04-19)
 
 
