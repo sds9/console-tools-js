@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/sds9/console-tools-js/compare/v1.4.0...v1.5.0) (2025-04-19)
+
+
+### Features
+
+* Add Vitest README and badge ([#14](https://github.com/sds9/console-tools-js/issues/14)) ([d6c3da5](https://github.com/sds9/console-tools-js/commit/d6c3da54b7598e4c8c4b47caf4dcd9ca729a9440))
+
 ## [1.4.0](https://github.com/sds9/console-tools-js/compare/v1.3.0...v1.4.0) (2025-04-19)
 
 
