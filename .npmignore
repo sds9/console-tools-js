@@ -1,0 +1,25 @@
+# Source files
+src/
+
+# Configuration files
+tsconfig.json
+.eslintrc.js
+.gitignore
+.npmrc
+
+# Tests
+__tests__/
+*.spec.ts
+*.test.ts
+coverage/
+
+# Development files
+.vscode/
+.idea/
+.github/
+.env*
+*.log
+*.tsbuildinfo
+
+# Only include dist folder for npm package
+# The "files" field in package.json also controls this
