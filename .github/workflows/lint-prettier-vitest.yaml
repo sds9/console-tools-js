@@ -7,6 +7,11 @@ on:
   pull_request:
     branches:
       - main
+    paths-ignore:
+      - '**/.release-please-config.json'
+      - '**/.release-please-manifest.json'
+    branches-ignore:
+      - 'release-please/**'
 
 jobs:
   lint-prettier-vitest:
