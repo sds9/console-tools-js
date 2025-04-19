@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sds9-org/js-exec.git"
+    "url": "git+https://github.com/sds9/console-tools-js.git"
   },
   "keywords": [
     "typescript",
@@ -29,9 +29,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sds9-org/js-exec/issues"
+    "url": "https://github.com/sds9/console-tools-js/issues"
   },
-  "homepage": "https://github.com/sds9-org/js-exec#readme",
+  "homepage": "https://github.com/sds9/console-tools-js#readme",
   "devDependencies": {
     "@eslint/js": "^9.25.0",
     "@typescript-eslint/eslint-plugin": "^8.29.1",
