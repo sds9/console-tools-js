@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/sds9-org/js-exec/compare/v1.0.0...v1.1.0) (2025-04-19)
+
+
+### Features
+
+* add .npmrc and .nvmrc for package management configuration ([56817e3](https://github.com/sds9-org/js-exec/commit/56817e3f07c090a3c25720a0028127bd5f32002f))
+* add .npmrc and .nvmrc for package management configuration ([21dc477](https://github.com/sds9-org/js-exec/commit/21dc477db272357a43bb2850cb2f5da78d75593a))
+
 ## 1.0.0 (2025-04-19)
 
 
