@@ -2,6 +2,7 @@
 
 JavaScript/TypeScript execution utilities for text formatting.
 
+[![npm version](https://img.shields.io/npm/v/console-tools-js.svg?style=flat&logo=npm)](https://www.npmjs.com/package/console-tools-js)
 [![ESLint](https://img.shields.io/badge/-ESLint-4B32C3?style=flat&logo=eslint&logoColor=white)](config/eslint/README.md)
 [![Prettier](https://img.shields.io/badge/-Prettier-FF69B4?style=flat&logo=prettier&logoColor=white)](config/prettier/README.md)
 [![Vitest](https://img.shields.io/badge/-Vitest-6E40C9?style=flat&logo=vitest&logoColor=white)](config/vitest/README.md)
