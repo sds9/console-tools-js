@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/sds9/console-tools-js/compare/v1.5.0...v1.6.0) (2025-04-25)
+
+
+### Features
+
+* **tables:** add table creation utility and tests for formatting options ([#25](https://github.com/sds9/console-tools-js/issues/25)) ([832d744](https://github.com/sds9/console-tools-js/commit/832d744bd7b997e4752987858cf73cec630144c5))
+
 ## [1.5.0](https://github.com/sds9/console-tools-js/compare/v1.4.0...v1.5.0) (2025-04-19)
 
 
