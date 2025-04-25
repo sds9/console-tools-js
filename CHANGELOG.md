@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/sds9/console-tools-js/compare/v1.6.0...v1.6.1) (2025-04-25)
+
+
+### Bug Fixes
+
+* **index:** export table utilities from the table module ([#27](https://github.com/sds9/console-tools-js/issues/27)) ([1c5346b](https://github.com/sds9/console-tools-js/commit/1c5346bf53c73985a4fa11d0b5f33d7915d820a4))
+
 ## [1.6.0](https://github.com/sds9/console-tools-js/compare/v1.5.0...v1.6.0) (2025-04-25)
 
 
