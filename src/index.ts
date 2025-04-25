@@ -12,3 +12,4 @@
  * Includes FontColor and BackgroundColor enums, FontStyle type, and formatText function
  */
 export * from './format';
+export * from './table';

@@ -1,10 +1,11 @@
 /**
  * Unit tests for the main index file exports
- * Verifies that all exports from format.ts are correctly re-exported from index.ts
+ * Verifies that all exports from format.ts and table.ts are correctly re-exported from index.ts
  */
 import { describe, it, expect } from 'vitest'
 import * as indexExports from '.'
 import * as formatExports from './format'
+import * as tableExports from './table'
 
 describe('index exports', () => {
   /**
@@ -21,8 +22,25 @@ describe('index exports', () => {
       expect(indexExports).toHaveProperty(key)
     })
     
-    // Verify count of exports matches
-    expect(indexKeys.length).toBe(formatKeys.length)
+    // Verify that format items are properly included in index exports
+    expect(formatKeys.every(key => indexKeys.includes(key))).toBe(true)
+  })
+
+  /**
+   * Test to verify that all exports from table.ts are re-exported from index.ts
+   * Ensures complete export coverage between modules
+   */
+  it('should export all items from table.ts', () => {
+    // Get all keys from the table module
+    const tableKeys = Object.keys(tableExports)
+    
+    // Verify that all table keys exist in index exports
+    tableKeys.forEach(key => {
+      expect(indexExports).toHaveProperty(key)
+    })
+    
+    // Verify that table items are properly included in index exports
+    expect(tableKeys.every(key => Object.keys(indexExports).includes(key))).toBe(true)
   })
   
   /**
@@ -60,6 +78,64 @@ describe('index exports', () => {
     const style = { bold: true }
     const result = indexExports.formatText(text, style)
     expect(result).toBe('\x1b[1mTest Text\x1b[0m')
+  })
+  
+  /**
+   * Test to verify createTable function is properly exported from table.ts
+   * Checks both function existence and basic functionality
+   */
+  it('should export createTable function', () => {
+    expect(indexExports).toHaveProperty('createTable')
+    expect(typeof indexExports.createTable).toBe('function')
+    expect(indexExports.createTable).toEqual(tableExports.createTable)
+    
+    // Simple test to verify the function works as expected
+    const data = [{ id: 1, name: 'Test' }]
+    const columns = [
+      { header: 'ID', key: 'id' },
+      { header: 'Name', key: 'name' }
+    ]
+    const table = indexExports.createTable(data, columns)
+    expect(table).toContain('ID')
+    expect(table).toContain('Name')
+    expect(table).toContain('Test')
+  })
+  
+  /**
+   * Test to verify TableColumn interface is properly exported
+   * Ensures the interface can be used correctly with TypeScript
+   */
+  it('should be able to use TableColumn type from index exports', () => {
+    // Create a compliant TableColumn object
+    const column: indexExports.TableColumn = {
+      header: 'Test',
+      key: 'test',
+      color: indexExports.FontColor.RED,
+      width: 10
+    }
+    
+    // If this compiles, it means the TableColumn type is exported correctly
+    expect(column).toHaveProperty('header', 'Test')
+    expect(column).toHaveProperty('key', 'test')
+    expect(column).toHaveProperty('color', '31')
+  })
+  
+  /**
+   * Test to verify TableOptions interface is properly exported
+   * Ensures the interface can be used correctly with TypeScript
+   */
+  it('should be able to use TableOptions type from index exports', () => {
+    // Create a compliant TableOptions object
+    const options: indexExports.TableOptions = {
+      headerColor: indexExports.FontColor.GREEN,
+      padding: 3,
+      border: true
+    }
+    
+    // If this compiles, it means the TableOptions type is exported correctly
+    expect(options).toHaveProperty('headerColor', '32')
+    expect(options).toHaveProperty('padding', 3)
+    expect(options).toHaveProperty('border', true)
   })
   
   /**
