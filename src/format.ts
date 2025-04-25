@@ -128,6 +128,5 @@ export const formatText = (text: string, style: FontStyle): string => {
 
   // Format the text with ANSI codes and reset at the end with \x1b[0m
   const formattedText = `\x1b[${styles.join(';')}m${text}\x1b[0m`
-  console.log('Formatted text:', formattedText)
   return formattedText
 }
