@@ -48,7 +48,7 @@ jobs:
 
       # The registry-url must be set for authentication to work on the npm publish step
       # Ref: https://github.com/actions/setup-node/issues/342#issuecomment-950119520
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         if: ${{ steps.release.outputs.release_created }}
         with:
           registry-url: https://registry.npmjs.org
